@@ -1,3 +1,49 @@
+body {
+    background-color: #4682b4; 
+  }
+
 h1 {
-    color:blue;
+    color: #ffffff;
+    text-shadow: #00008b  1px 0 10px;
 }
+
+h2 {
+    font-size: 90%;
+    background: linear-gradient(0.25turn, #ffffff, #4682b4);
+}
+
+div#kekka {
+    background-color: #f0f8ff;
+}
+
+p.toshi {
+    font-size: 200%;
+    font-weight: bold;
+    color: #00008b;
+}
+
+p.saikou {
+    color: #cc0033;
+}
+
+p.saitei {
+    color: #3399ff;
+}
+
+p.shitsudo {
+    color: #003399;
+}
+
+a:link {
+    color: pink;
+  }
+  
+  a:visited {
+    color: #4b0082;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  

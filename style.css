@@ -1,3 +1,19 @@
-h1 {
-    color:aquamarine;
+body {
+    background-color: #e0ffef; 
 }
+
+h1 {
+    text-shadow: #00fa9a   1px 0 10px;
+}
+
+a:link {
+    color: pink;
+  }
+  
+  a:visited {
+    color: #4b0082;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
