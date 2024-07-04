@@ -1,9 +1,81 @@
 body {
-    background-color: #e0ffef; 
+    background-color: #e4f5ff; 
 }
 
 h1 {
-    text-shadow: #00fa9a   1px 0 10px;
+    font-size: 250%;
+    background-color: #27bcd2; 
+    text-shadow:
+    1px 1px 1px #ffffff,
+    2px 2px 1px #ffffff;
+    text-align: center;
+}
+
+.box1 {
+  padding: 0.2em 0.5em;
+  margin: 2em 0;
+  color: #565656;
+  background: #ffeaea;
+  box-shadow: 0px 0px 0px 10px #ffeaea;
+  border: dashed 2px #ffc3c3;
+  border-radius: 8px;
+}
+.box1 h3, p {
+  margin: 0; 
+  padding: 0;
+}
+
+.box2 {
+  padding: 0.2em 0.5em;
+  margin: 2em 0;
+  color: #565656;
+  background: #ffeaea;
+  box-shadow: 0px 0px 0px 10px #ffeaea;
+  border: dashed 2px #ffc3c3;
+  border-radius: 8px;
+}
+.box2 h3, p {
+  margin: 0; 
+  padding: 0;
+}
+.box3 {
+  padding: 0.2em 0.5em;
+  margin: 2em 0;
+  color: #565656;
+  background: #ffeaea;
+  box-shadow: 0px 0px 0px 10px #ffeaea;
+  border: dashed 2px #ffc3c3;
+  border-radius: 8px;
+}
+.box3 h3, p {
+  margin: 0; 
+  padding: 0;
+}
+.box4 {
+  padding: 0.2em 0.5em;
+  margin: 2em 0;
+  color: #565656;
+  background: #ffeaea;
+  box-shadow: 0px 0px 0px 10px #ffeaea;
+  border: dashed 2px #ffc3c3;
+  border-radius: 8px;
+}
+.box4 h3, p {
+  margin: 0; 
+  padding: 0;
+}
+.box5 {
+  padding: 0.2em 0.5em;
+  margin: 2em 0;
+  color: #565656;
+  background: #ffeaea;
+  box-shadow: 0px 0px 0px 10px #ffeaea;
+  border: dashed 2px #ffc3c3;
+  border-radius: 8px;
+}
+.box5 h3, p {
+  margin: 0; 
+  padding: 0;
 }
 
 a:link {
