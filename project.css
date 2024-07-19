@@ -12,6 +12,15 @@ h2 {
     background: linear-gradient(0.25turn, #ffffff, #4682b4);
 }
 
+div  {
+    padding :30px,100px,30px,100px;
+    margin : 20px ;
+    background-color : rgb(255, 255, 255,0.8) ;
+    text-align: center;
+    padding:20px 0;
+} 
+
+
 
 a:link {
     color: pink;

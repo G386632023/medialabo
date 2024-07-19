@@ -48,18 +48,51 @@ let data = {
 ////////// 課題3-2 ここからプログラムを書こう
 
 console.log(data.name); 
-console.log(data.coord); 
-
+console.log(data.weather[0].description); 
 console.log(data.main.temp_max);
 console.log(data.main.temp_min); 
 console.log(data.main.humidity); 
 console.log(data.wind.speed);
 console.log(data.wind.deg);
+console.log(data.coord.lon); 
+console.log(data.coord.lat);
 
 let div = document.querySelector('div#result'); 
 let p = document.createElement('p');
+p.textContent = data.name;
+div.insertAdjacentElement('beforeend', p);
 
+let p2 = document.createElement('p');
+p2.textContent = "天気: "+data.weather[0].description;
+p.insertAdjacentElement('afterend', p2);
 
+let p3 = document.createElement('p');
+p3.textContent = "最高気温: "+data.main.temp_max;
+p2.insertAdjacentElement('afterend', p3);
+
+let p4 = document.createElement('p');
+p4.textContent = "最低気温: "+data.main.temp_min;
+p3.insertAdjacentElement('afterend', p4);
+
+let p5 = document.createElement('p');
+p5.textContent = "湿度: "+data.main.humidity;
+p4.insertAdjacentElement('afterend', p5);
+
+let p6 = document.createElement('p');
+p6.textContent = "風速: "+data.wind.speed;
+p5.insertAdjacentElement('afterend', p6);
+
+let p7 = document.createElement('p');
+p7.textContent = "風向: "+data.wind.deg;
+p6.insertAdjacentElement('afterend', p7);
+
+let p8 = document.createElement('p');
+p8.textContent = "緯度: "+data.coord.lon;
+p7.insertAdjacentElement('afterend', p8);
+
+let p9 = document.createElement('p');
+p9.textContent = "緯度: "+data.coord.lat;
+p8.insertAdjacentElement('afterend', p9);
 
 
 
