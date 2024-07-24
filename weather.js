@@ -96,14 +96,9 @@ p8.insertAdjacentElement('afterend', p9);
 
 
 
-let a = document.querySelector('#kensaku');
-a.addEventListener('click', greeting);
-
-function greeting() {
-    let i = document.querySelector('input[name="namae"]');
-    let namae = i.value;      
-    console.log(i.value);
-}
+let toshi = document.querySelector('select[name="toshi"]');
+let a =toshi.value;
+console.log('都市: '+ a);
 
 
 
