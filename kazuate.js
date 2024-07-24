@@ -9,6 +9,8 @@ let kaisu = 0;
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
 hantei();
 
+
+
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
@@ -17,16 +19,20 @@ function hantei() {
 
 
 let a = document.querySelector('span#kaisu');
-let b = document.querySelector('span#answer');
+a.textContent = kaisu; 
 
+let b = document.querySelector('span#answer');
+b.textContent = yoso;
+
+let c = document.querySelector('p#result');
 if (yoso===kotae && kaisu >= 2){
-    ('答えは '+kotae+' でした．すでにゲームは終わっています');
+    c.textContent =('答えは '+kotae+' でした．すでにゲームは終わっています');
 }else if (yoso===kotae){
-    ('正解です．おめでとう!');
+    c.textContent =('正解です．おめでとう!');
 }else if (yoso>kotae){
-    ('まちがい．答えはもっと大きいですよ');
+    c.textContent =('まちがい．答えはもっと大きいですよ');
 }else if (yoso<kotae){
-    ('まちがい．答えはもっと小さいですよ');
+    c.textContent =('まちがい．答えはもっと小さいですよ');
 }
     // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力

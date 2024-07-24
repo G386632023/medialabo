@@ -96,3 +96,14 @@ p8.insertAdjacentElement('afterend', p9);
 
 
 
+let a = document.querySelector('#kensaku');
+a.addEventListener('click', greeting);
+
+function greeting() {
+    let i = document.querySelector('input[name="namae"]');
+    let namae = i.value;      
+    console.log(i.value);
+}
+
+
+
