@@ -32,9 +32,9 @@ function hantei() {
   }else if (yoso===kotae){
       c.textContent =('正解です．おめでとう!');
   }else if (yoso>kotae){
-      c.textContent =('まちがい．答えはもっと大きいですよ');
-  }else if (yoso<kotae){
       c.textContent =('まちがい．答えはもっと小さいですよ');
+  }else if (yoso<kotae){
+      c.textContent =('まちがい．答えはもっと大きいですよ');
   }
   // 課題3-1における出力先はコンソール
 }
