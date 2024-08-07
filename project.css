@@ -3,6 +3,7 @@ body {
   }
 
 h1 {
+    font-size: 300%;
     color: #ffffff;
     text-shadow: #00008b  1px 0 10px;
 }
