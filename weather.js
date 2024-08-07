@@ -94,18 +94,68 @@ let p9 = document.createElement('p');
 p9.textContent = "緯度: "+data.coord.lat;
 p8.insertAdjacentElement('afterend', p9);
 
+
+
 let b = document.querySelector('button#print');
 b.addEventListener('click', kensaku);
 
+
 function kensaku() {
 
-  let toshi = document.querySelector('select[name="toshi"]');
-  let a =toshi.value;
-  console.log('都市: '+ a);
-  
+  let toshi = document.querySelector('select#toshi');
+  let a = toshi.selectedIndex;
+
+  let a2 = toshi.querySelectorAll('option');
+  let a3 = a2.item(a);
+  let id = a3.getAttribute('value');
+  console.log('都市: '+ id);
 }
 
+b.addEventListener('click', sendRequest);
 
+  // 通信を開始する処理
+function sendRequest() {
+  let toshi = document.querySelector('select#toshi');
+  let a = toshi.selectedIndex;
 
+  let a2 = toshi.querySelectorAll('option');
+  let a3 = a2.item(a);
+  let id = a3.getAttribute('value');
+  // URL を設定
+  let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+id+'.json';
 
+  // 通信開始
+  axios.get(url)
+      .then(showResult)   // 通信成功
+      .catch(showError)   // 通信失敗
+      .then(finish);      // 通信の最後の処理
+}
+
+// 通信が成功した時の処理
+function showResult(resp) {
+  // サーバから送られてきたデータを出力
+  let data = resp.data;
+
+  // data が文字列型なら，オブジェクトに変換する
+  if (typeof data === 'string') {
+      data = JSON.parse(data);
+  }
+
+  // data をコンソールに出力
+  print(data);
+  console.log(data);
+
+  // data.x を出力
+  console.log(data.x);
+}
+
+// 通信エラーが発生した時の処理
+function showError(err) {
+  console.log(err);
+}
+
+// 通信の最後にいつも実行する処理
+function finish() {
+  console.log('Ajax 通信が終わりました');
+}
 
