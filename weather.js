@@ -94,11 +94,18 @@ let p9 = document.createElement('p');
 p9.textContent = "緯度: "+data.coord.lat;
 p8.insertAdjacentElement('afterend', p9);
 
+let b = document.querySelector('button#print');
+b.addEventListener('click', kensaku);
+
+function kensaku() {
+
+  let toshi = document.querySelector('select[name="toshi"]');
+  let a =toshi.value;
+  console.log('都市: '+ a);
+  
+}
 
 
-let toshi = document.querySelector('select[name="toshi"]');
-let a =toshi.value;
-console.log('都市: '+ a);
 
 
 
